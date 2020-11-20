@@ -1,0 +1,49 @@
+@import "utils";
+$background: gray;
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$text-color: gray;
+$text-dark: #ffff;
+// $primary-col: #2ecc71;
+$primary-col: gray;
+
+$primary-col1: #ff0055;
+$color: gray;
+$active-color: green;
+$text-white: #ffff;
+$white: #ffff;
+$primary: #0000ff;
+$main-back: rgba(0, 53, 128, 1);
+$main-font-col: #fff;
+$main-header-col: black;
+$main-header-size: 65px;
+$third-header-size: 27px;
+$second-header-size: 34px;
+$main-nav-col: #41403e;
+$header-text: rgba(0, 53, 128, 1);
+$link-hover-col: #00fd0d;
+$bright-blue: #448e9d;
+$caption-size: 49px;
+$header-back: #e5e4df;
+$main-pic: $header-back url("/img/back2.jpg") 0 bottom no-repeat;
+
+$arial: Arial, Helvetica, sans-serif;
+$oswald: "Oswald", Arial, Helvetica, sans-serif;
+$button-col: #35484a;
+$social-icon-fb: #eceff5;
+$social-icon-yt: #ff0000;
+$social-icon-tw: #3eb5e8;
+$social-icon-insta: #d74195;
+$social-icon-linkdin: #0077b5;
+$social-icon-mail: #d54b3d;
+// footer var
+$footer-font-col: white;
+$footer-col: rgba(0, 53, 128, 1);
+// $footer-col: rgba(0, 0, 0, 0.9);
+$footer-caption-col: white;
+
+// // break point of screens
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 960px;
+$breakpoint-large: 1280px;
+$breakpoint-xLarge: 1920px;

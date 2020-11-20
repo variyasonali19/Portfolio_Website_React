@@ -1,0 +1,33 @@
+//if you write null as value then its ok not to provide every argument while calling ;without null you have to mntion every argument
+@mixin flexbox($dir: null, $wrap: null, $just: null, $align: null) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+  align-content: $align;
+  @content; //   if you want to add some more css in mixin you have to allow mixin to add by writing @content in mxin after that you can add some more css here like
+}
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $break-s) and (max-width: $break-m) {
+      @content;
+    }
+  } @else if $break == "medium" {
+    @media (min-width: $break-m) {
+      @content;
+    }
+  } @else if $break == "large" {
+    @media (min-width: $break-l) {
+      @content;
+    }
+  } @else {
+    @error 'no value could retrieved for #{$break}';
+  }
+}
+@mixin textStyle($fntWght: null, $fSize: null, $fCol: null, $fFamily: null) {
+  color: $fCol;
+  font-weight: $fntWght;
+  font-size: $fSize;
+  font-family: $fFamily;
+  @content; //   if you want to add some more css in mixin you have to allow mixin to add by writing @content in mxin after that you can add some more css here like
+}

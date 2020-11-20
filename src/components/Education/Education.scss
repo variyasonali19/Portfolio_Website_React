@@ -1,0 +1,139 @@
+// @import "utils";
+@import "../../styles/variables.scss";
+
+.container {
+  color: White;
+  margin: 0;
+  height: 700px;
+}
+
+.container::after {
+  content: "";
+  opacity: 1;
+  background: rgb(26, 31, 42) url("../../Images/educationBg.jpg") no-repeat top;
+  background-blend-mode: screen;
+  /* also change the blend mode to what suits you, from darken, to other 
+    many options as you deem fit*/
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+.detail {
+  padding-left: 5rem;
+}
+.carouselProject {
+  background-color: rgb(216, 216, 216);
+}
+.imageMain {
+  height: 32.5rem;
+  opacity: 1;
+  width: auto;
+}
+.imageBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  border-radius: 50%;
+  height: 15rem;
+}
+
+.dropdown {
+  list-style-type: none;
+  transition: all 0.5s;
+}
+
+.linkTitle {
+  border: 1px solid black;
+  list-style-type: none;
+  padding: 20px;
+  //   background-color: red;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    background-color: aqua;
+  }
+}
+.desBox {
+  opacity: 0.9;
+}
+.imgBg {
+  width: 100;
+}
+.buttonAnimated {
+  align-items: flex-start;
+  padding-left: 6rem;
+  margin-top: 0rem;
+  padding-top: 3rem;
+}
+.arrowAnimated {
+  border: none;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  justify-content: center;
+  .linkArrow {
+    border: none;
+    &:hover {
+      padding-left: 0.2rem;
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+}
+.mainButton {
+  margin-top: 2rem;
+}
+.Carousel {
+  margin-top: 10rem;
+  height: 19rem;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMe {
+  display: flex;
+}
+.typing {
+  display: flex;
+  height: 5rem;
+}
+// removing default button style
+button {
+  outline: none;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+.education {
+  background-color: aqua;
+  padding-top: 40rem;
+}
+.mainHeader {
+  margin-bottom: 5px;
+  background-color: black;
+}

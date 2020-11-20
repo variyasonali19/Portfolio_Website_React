@@ -1,0 +1,15 @@
+@import "variables";
+%test {
+  background-color: red;
+}
+%btn {
+  // write common css for button
+  padding: 58px 20px;
+  border-radius: 2px;
+  // outline: none;
+  // cursor: pointer;
+
+  &--primary {
+    background-color: $primary;
+  }
+}

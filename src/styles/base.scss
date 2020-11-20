@@ -1,0 +1,78 @@
+@import "utils";
+@import "variables";
+
+html {
+  box-sizing: border-box;
+  //  background-color: $oc-gray-9;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  // width: 100%;
+  // position: absolute;
+  font-family: "Poppins", "Replica", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+h1 {
+  font-family: "poppins-bold", sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  // text-transform: uppercase;
+}
+h2 {
+  font-family: "poppins-bold", sans-serif;
+
+  font-size: 1.5rem;
+  line-height: 1.2;
+
+  margin-bottom: 0;
+  // text-transform: uppercase;
+}
+h3 {
+  font-family: "Replica-Bold";
+  font-weight: 500;
+  // color: $oc-gray-2;
+}
+h6 {
+  font-family: "Segoe UI";
+  // color: $oc-gray-6;
+}
+// a {
+//   font-family: "poppins-bold", sans-serif;
+//   color: #2ecc71;
+//   font-weight: 700;
+// }
+// .highLightBackground {
+//   // background: $oc-gray-9;
+// }
+// .darkBackground {
+//   // background: $oc-gray-9;
+// }
+@media (max-width: $breakpoint-mobile) {
+  html {
+    font-size: 85%;
+    width: 100%;
+  }
+}
+@media (max-width: $breakpoint-tablet) {
+  html {
+    font-size: 85%;
+  }
+}
+// @media (max-width: $breakpoint-large) {
+//   html {
+//     font-size: 20%;
+//   }
+// }
+// @media (max-width: $breakpoint-xLarge) {
+//   html {
+//     font-size: 80%;
+//   }
+// }

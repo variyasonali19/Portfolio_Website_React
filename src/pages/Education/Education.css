@@ -1,0 +1,15 @@
+.educations {
+  height: 100vh;
+  margin-top: 8rem;
+  padding-top: 5rem;
+}
+table {
+  background-color: lightslategray;
+  opacity: 0.9;
+}
+th {
+  color: aliceblue;
+}
+tr {
+  color: aliceblue;
+}
