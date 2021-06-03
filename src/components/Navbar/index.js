@@ -1,20 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
-  Nav,
+  MobileIcon, Nav,
   NavbarContainer,
-  NavLogo,
-  MobileIcon,
+
+
   NavItem,
-  NavMenu,
-  NavLinks,
-  NavBtn,
-  NavBtnLink,
+
+  NavLinks, NavLogo,
+
+
+  NavMenu
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggleNavbar }) => {
   const [scrollNav, setScrollNav] = useState(false);
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -38,7 +39,7 @@ const Navbar = ({ toggle }) => {
             <NavLogo to="/" onClick={toggleHome}>
               sv
             </NavLogo>
-            <MobileIcon onClick={toggle}>
+            <MobileIcon onClick={toggleNavbar}>
               <FaBars />
             </MobileIcon>
             <NavMenu>
@@ -52,6 +53,18 @@ const Navbar = ({ toggle }) => {
                   offset={-80}
                 >
                   About
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks
+                  to="professionalexperience"
+                  smooth={true}
+                  duration={800}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                >
+                  Professional Experience
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -90,18 +103,6 @@ const Navbar = ({ toggle }) => {
                   Contact
                 </NavLinks>
               </NavItem>
-              {/* <NavBtn>
-                <NavBtnLink
-                  to="signin"
-                  smooth={true}
-                  duration={800}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Sign In
-                </NavBtnLink>
-              </NavBtn> */}
             </NavMenu>
           </NavbarContainer>
         </Nav>

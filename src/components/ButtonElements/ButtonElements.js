@@ -1,8 +1,7 @@
 //to use:
 //  <Button to="home" primary big fontBig btnDarkText>{buttonLabel}</Button>
-import styled from "styled-components";
-import { Link as LinkS } from "react-scroll";
 import { Link as LinkR } from "react-router-dom";
+import styled from "styled-components";
 export const Button = styled(LinkR)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? "#01bf71" : "#010606")};

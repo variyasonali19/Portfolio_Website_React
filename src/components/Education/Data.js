@@ -14,6 +14,10 @@ export const EduObjThree = {
   para1: "freeCodeCamp",
 };
 export const EduObjFour = {
+  title: "Digital Skills: User Experience",
+  para1: "Accenture",
+};
+export const CafeBarista = {
   title: "Cafe barista certification ",
   para1: "Kilburn community center",
 };

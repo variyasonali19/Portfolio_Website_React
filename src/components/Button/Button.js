@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Button.scss";
 const STYLES = ["btns__primary", "btns__outline", "btns__animated"];
 const SIZES = ["btns__medium", "btns__large"];
 

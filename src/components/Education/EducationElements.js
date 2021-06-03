@@ -1,7 +1,5 @@
+import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 import styled from "styled-components";
-import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
 import educationBg from "../../Images/educationBg.jpg";
 
 export const HeroContainer = styled.div`

@@ -1,41 +1,27 @@
 import React from "react";
+import { SidebarLinks } from "../InfoSection/Data";
 import {
-  SidebarContainer,
   CloseIcon,
-  Icon,
-  SidebarWrapper,
+  Icon, SidebarContainer,
   SidebarLink,
-  SidebarMenu,
-  SideBtnWrap,
-  SidebarRoute,
+  SidebarMenu, SidebarWrapper
 } from "./SidebarElement";
-
-const Sidebar = ({ isOpen, toggle }) => {
+const Sidebar = ({ isOpen, toggleNavbar }) => {
   return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+    <SidebarContainer isOpen={isOpen} onClick={toggleNavbar}>
       <Icon>
-        <CloseIcon onClick={toggle} />
+        <CloseIcon onClick={toggleNavbar} />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
-            About
-          </SidebarLink>
-          <SidebarLink to="education" onClick={toggle}>
-            Education
-          </SidebarLink>{" "}
-          <SidebarLink to="project" onClick={toggle}>
-            Projects
-          </SidebarLink>{" "}
-          <SidebarLink to="contact" onClick={toggle}>
-            Contact
-          </SidebarLink>
+          {SidebarLinks.map(SidebarLinks => (
+            <SidebarLink to={SidebarLinks} onClick={toggleNavbar}>
+              {SidebarLinks.toUpperCase()}
+            </SidebarLink>
+          ))}
         </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
-        </SideBtnWrap>
       </SidebarWrapper>
-    </SidebarContainer>
+    </SidebarContainer >
   );
 };
 

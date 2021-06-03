@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { FaBars, FaArrowLeft } from "react-icons/fa";
+import React from "react";
 import { ImHome } from "react-icons/im";
-import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import {
   Nav,
-  ProjectsH1,
   NavbarContainer,
-  NavLogo,
-  NavbarTitle,
-  MobileIcon,
-  NavItem,
-  NavMenu,
-  NavLinks,
-  NavBtn,
-  NavBtnLink,
+  NavLogo, ProjectsH1
 } from "./TitleNavbarElements";
 
 const TitleNavBar = ({ title }) => {

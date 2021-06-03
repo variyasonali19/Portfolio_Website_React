@@ -1,28 +1,44 @@
 import React from "react";
-import { animateScroll as scroll } from "react-scroll";
-import { AiOutlineMail, AiOutlineHome } from "react-icons/ai";
+import { AiFillLinkedin, AiOutlineHome, AiOutlineMail } from "react-icons/ai";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
-
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { AiFillLinkedin } from "react-icons/ai";
-
+import { animateScroll as scroll } from "react-scroll";
 import {
   FooterContainer,
-  FooterWrap,
-  FooterLinkContainer,
-  FooterLinksWrapper,
-  FooterLinkItems,
-  FooterLink,
-  FooterLinkTitle,
-  SocialMedia,
+
+
+
+
+  FooterLink, FooterLinkContainer,
+
+  FooterLinkItems, FooterLinksWrapper,
+
+
+  FooterLinkTitle, FooterWrap,
+
+
+
+
+
+
+
+
+
+  SocialIconLink, SocialIcons, SocialLogo, SocialMedia,
   SocialMediaWrap,
-  SocialLogo,
-  SocialIcons,
-  SocialIconLink,
-  WebSiteRights,
+
+
+
+  WebSiteRights
 } from "./FooterElements";
+
+
 const toggleHome = () => {
   scroll.scrollToTop();
+};
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
 };
 const Footer = () => {
   return (
@@ -56,7 +72,12 @@ const Footer = () => {
             <FooterLinkItems>
               <FooterLinkTitle> QUICK LINKS </FooterLinkTitle>
               <FooterLink to="/about">About Me</FooterLink>
-              <FooterLink to="/projects">Projects</FooterLink>
+              <FooterLink onClick={() => {
+                openInNewTab(
+                  "https://github.com/variyasonali19?tab=repositories"
+                );
+              }}>Projects</FooterLink>
+              <FooterLink to="/professionalexperience">Professional Experience</FooterLink>
               <FooterLink to="/education">Education</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>

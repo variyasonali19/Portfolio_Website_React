@@ -15,7 +15,7 @@ import {
 } from "./HeroSectionElements";
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
-  const arrayText = ["Full stack developer", "singer", "youtuber", "dancer"];
+  const arrayText = ["Front-end developer", "singer", "youtuber", "dancer"];
   const onHover = () => {
     setHover(!hover);
     // alert("onhoverCalled" + hover);

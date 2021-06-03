@@ -1,19 +1,26 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "../ButtonElements/ButtonElements";
 // import { ReactComponent as SvgSmiley } from "../../Images/education.svg";
 import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
-  Column1,
+  BtnWrap, Column1,
   Column2,
-  TextWrapper,
-  TopLine,
+
+
   Heading,
-  Subtitle,
-  BtnWrap,
-  ImgWrap,
-  Img,
+
+
+
+  Img, ImgWrap, InfoContainer,
+
+  InfoRow, InfoWrapper,
+
+
+
+
+
+
+  Subtitle, TextWrapper,
+  TopLine
 } from "./InfoElements";
 const InfoSection = ({
   onClickBtn,
@@ -34,12 +41,6 @@ const InfoSection = ({
   logo,
   alt,
 }) => {
-  const [clickToReveal, setClickToReveal] = useState(false);
-  const [btnText, setBtnText] = useState(true);
-  const onClickToReveal = () => {
-    setClickToReveal(!clickToReveal);
-    setBtnText(!btnText);
-  };
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
     if (newWindow) newWindow.opener = null;
@@ -62,12 +63,10 @@ const InfoSection = ({
                           "https://github.com/variyasonali19?tab=repositories"
                         );
                       }}
-                      // onClick={onClickToReveal}
                       primary={primary}
                       btnDarkText={btnDarkText}
                     >
                       {buttonLabel}
-                      {/* {btnText ? "Click to reveal" : "Hide"} */}
                     </Button>
                   ) : (
                     <Button
