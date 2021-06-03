@@ -13,12 +13,17 @@ import {
   ArrowForward,
   ArrowRight,
 } from "./HeroSectionElements";
+import Pdf from "../../assets/Sonali-Variya_Front-End-Developer.pdf";
+
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
-  const arrayText = ["Front-end developer", "singer", "youtuber", "dancer"];
+  const arrayText = ["Front End Developer", "Singer", "Youtuber", "Dancer"];
   const onHover = () => {
     setHover(!hover);
     // alert("onhoverCalled" + hover);
+  };
+  const onResumeClick = () => {
+    window.open(Pdf);
   };
   return (
     <HeroContainer id="hero">
@@ -41,8 +46,8 @@ const HeroSection = () => {
         <HeroH1>Sonali Variya</HeroH1>
         <Typing arrayText={arrayText} />
         <HeroBtnWrapper>
-          <Button
-            to="about"
+        <Button
+            onClick={onResumeClick}
             primary="true"
             dark="true"
             btnDarkText="true"
@@ -54,7 +59,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            About Me
+            Resume
             {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>

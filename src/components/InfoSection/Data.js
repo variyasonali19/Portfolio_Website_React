@@ -67,7 +67,7 @@ export const aboutMeInformation = {
   btnDarkText: false,
   lightBg: false,
   lightText: true,
-  lightTextDesc: true ,
+  lightTextDesc: true,
   topLine: "About Me",
   headline: "Want to know more about me?",
   description:
@@ -82,7 +82,7 @@ export const aboutMeInformation = {
   darkText: false,
 };
 
-export const professionalExperience={
+export const professionalExperience = {
   id: "professionalexperience",
   routeForbtn: "professionalexperience",
   btnDarkText: false,
@@ -102,7 +102,7 @@ export const professionalExperience={
   primary: false,
   darkText: true,
 }
-export const SidebarLinks = ["about","professionalexperience", "education", "projects", "contact"]
+export const SidebarLinks = ["about", "professionalexperience", "education", "projects", "contact"]
 export const AboutMeDetailInfo = {
   title: "About Me",
   detailInfo: [
@@ -114,5 +114,6 @@ export const AboutMeDetailInfo = {
     },
     {
       thirdPara: " I love creative work. I also make youtube videos in my free time. Learning new things never exhausts my mind. I believe that one should never be afraid to try something new because life gets boring when you stay within the limits of what you already know. I always learn from my mistakes and believe in hard work because there really is no substitute for working hard. Willing to go an extra mile to reach goals and learn along the way. I possess a combination of skills and experiences that make me stand out from the crowd."
-    }]
+    },
+    ]
 }
