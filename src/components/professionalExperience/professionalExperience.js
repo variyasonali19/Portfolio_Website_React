@@ -22,8 +22,8 @@ function professionalExperience() {
                         <MainTitle> React Front End Developer</MainTitle>
                     </TitleWrapper>
                     <InfoSection {...professionalExperienceData} />
-                    <div style={{ paddingLeft: "40px" }}>
-                        <h6 style={{ fontWeight: "bold" }}>Roles & Responsibilities: </h6>
+                    <h6 style={{ fontWeight: "bold" }}>Roles & Responsibilities: </h6>
+                    <div style={{ paddingLeft: "17px" }}>
                         <ul>
                             <li>Gather and evaluate user requirements and develop UX design in Adobe XD.</li>
                             <li>Translate designs and wireframes into high-quality code.</li>
@@ -36,20 +36,20 @@ function professionalExperience() {
                             <li>Work in an Agile (Scrum) Development team to deliver and provide regular updates to the business team and project managers.</li>
                             <li>Track and manage project tasks and progress through the JIRA.</li>
                         </ul>
-                        <h6 style={{ fontWeight: "bold" }}>Tools</h6>
-                        <p> Visual Studio Code, Node.js, GIT, GitKraken, JIRA, Developer Tool,
-                            </p>
-                        <h6 style={{ fontWeight: "bold" }}>Technologies</h6> <p>
-                            React, Redux, RESTful Web Services, Plotly, AWS, Typescript, JavaScript, JSON, CSS3, Material-UI, .
-                            </p>
-                        <h6 style={{ fontWeight: "bold" }}>Team Size</h6><p>3</p>
                     </div>
+                    <h6 style={{ fontWeight: "bold" }}>Tools</h6>
+                    <p> Visual Studio Code, Node.js, GIT, GitKraken, JIRA, Developer Tool,
+                            </p>
+                    <h6 style={{ fontWeight: "bold" }}>Technologies</h6> <p>
+                        React, Redux, RESTful Web Services, Plotly, AWS, Typescript, JavaScript, JSON, CSS3, Material-UI, .
+                            </p>
+                    <h6 style={{ fontWeight: "bold" }}>Team Size</h6><p>3</p>
                     <TitleWrapper>
                         <MainTitle> Manual Test Engineer</MainTitle>
                     </TitleWrapper>
                     <InfoSection {...manualTester} />
-                    <div style={{ paddingLeft: "40px" }}>
-                        <h6 style={{ fontWeight: "bold" }}>Roles & Responsibilities: </h6>
+                    <h6 style={{ fontWeight: "bold" }}>Roles & Responsibilities: </h6>
+                    <div style={{ paddingLeft: "17px" }}>
                         <ul>
                             <li>To read all the documents and understand what needs to be tested.</li>
                             <li>Based on the information procured in the above step decide how it is to be tested.</li>
@@ -59,7 +59,7 @@ function professionalExperience() {
                             <li>Carry out regression testing every time when changes are made to the code to fix defects.</li>
                         </ul>
                     </div>
-                </InfoWrapper>              
+                </InfoWrapper>
             </InfoContainer>
         </>
     );

@@ -9,7 +9,7 @@ export const projectInformation = {
   routeForbtn: "projects",
   headline: "Projects",
   description:
-    "I have accomplished these projects under minimal observations and dedication.",
+    "Explore my personal projects that I have accomplished under minimal observations and full dedication that has helped me sharpen my programming skills.",
   buttonLabel: "Explore",
   imgStart: false,
   img: require("../../Images/svg-1.svg"), //get image from undrawn.co
@@ -28,7 +28,7 @@ export const educationInformation = {
   topLine: "about",
   headline: "Education & Certifications ",
   description:
-    "I have a bachelor degree in electronics and communication engineering. Also have a diploma in software testing.",
+    "I have a bachelor degree in Electronics and Communication Engineering. Also have a diploma in Software Testing.",
   buttonLabel: "Know More",
   imgStart: true, //to align left or right
   img: require("../../Images/svg-1.svg"), //get image from undrawn.co
@@ -110,10 +110,10 @@ export const AboutMeDetailInfo = {
       firstPara: `Hi, I am Sonali Variya. I'm a React Front End Developer at Optimatics since December, 2020. I describe myself as a passionate developer who loves coding and have hands-on experience in ReactJS, React Native, AngularJS and .NET. I have understanding of modern UI and UX trends, and ability to build maintainable, scalable, and clean web solutions.`
     },
     {
-      secondPara: "About my education, I have a bachelor degree in electronics and communication engineering and have a diploma in software testing. I have worked as a manual tester for more than 1 year."
+      secondPara: "About my education, I have a bachelor degree in Electronics and Communication Engineering and have a diploma in Software Testing. I have worked as a manual tester for more than a year before I started programming."
     },
     {
-      thirdPara: " I love creative work. I also make youtube videos in my free time. Learning new things never exhausts my mind. I believe that one should never be afraid to try something new because life gets boring when you stay within the limits of what you already know. I always learn from my mistakes and believe in hard work because there really is no substitute for working hard. Willing to go an extra mile to reach goals and learn along the way. I possess a combination of skills and experiences that make me stand out from the crowd."
+      thirdPara: " I love creative work. I also make youtube videos in my free time. Learning new things never exhausts my mind. I believe that one should never be afraid of trying something new because life gets boring when you stay within the limits of what you already know. I always learn from my mistakes and believe in hard work because there really is no substitute for working hard. I possess a combination of skills and experiences that make me stand out from the crowd."
     },
     ]
 }
